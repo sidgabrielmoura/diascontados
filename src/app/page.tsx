@@ -51,12 +51,16 @@ export default function Home() {
           </div>
 
           <div
-            className="absolute w-4 h-4 rounded-full transition-all duration-300 dark:bg-zinc-900 bg-zinc-50"
+            className="absolute h-8 px-4 flex items-center justify-center rounded-md transition-all duration-300 dark:bg-zinc-900 bg-zinc-50 text-sm font-serif font-bold"
             style={{
-              top: "85%",
-              left: `calc(${curretIndex} * 20% + 9%)`,
+              width: "fit-content",
+              top: "12px",
+              left: `calc(${curretIndex} * 20% + 10%)`,
+              transform: "translateX(-50%)",
             }}
-          ></div>
+          >
+            {comemorative_dates[curretIndex].nome}
+          </div>
         </div>
 
         <div className="flex flex-col mt-12 -space-y-8 max-sm:-space-y-7 select-none dark:text-black text-white">
