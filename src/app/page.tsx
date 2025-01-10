@@ -43,7 +43,7 @@ export default function Home() {
               <button
                 key={index}
                 onClick={() => setCurretIndex(index)}
-                className={`relative py-1 rounded-2xl cursor-pointer`}
+                className={`relative py-1 rounded-2xl cursor-pointer text-[15px]`}
               >
                 {item.nome}
               </button>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
 
           <div
-            className="absolute h-8 px-4 flex items-center justify-center rounded-md transition-all duration-300 dark:bg-zinc-900 bg-zinc-50 text-sm font-serif font-bold"
+            className="absolute h-8 px-3 text-[15px] flex items-center justify-center rounded-md transition-all duration-300 dark:bg-zinc-900 bg-zinc-50 text-sm font-serif font-bold"
             style={{
               width: "fit-content",
               top: "12px",
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-12 -space-y-8 max-sm:-space-y-7 select-none dark:text-black text-white">
+        <div className="flex flex-col mt-12 -space-y-8 max-sm:-space-y-6 select-none dark:text-black text-white">
           <span>faltam</span>
           <h1 className="text-[60px] sm:text-[80px] font-black font-serif">
             {hollydaysRemaining} dias
